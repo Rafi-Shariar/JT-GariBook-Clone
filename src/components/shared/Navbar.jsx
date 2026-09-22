@@ -10,14 +10,14 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 10) {
         setShowTopToggle(false);
       } else {
         setShowTopToggle(true);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -34,17 +34,19 @@ export default function Navbar() {
   return (
     <div className="bg-white p-2 sticky top-0 z-50">
       {/* Top language toggle - hides on scroll */}
-      {showTopToggle && (
-      <div className="hidden lg:flex justify-end">
-  <button
-    onClick={toggleLanguage}
-    className="bg-brand-primary px-2 py-2 flex gap-2 rounded-lg text-white text-sm cursor-pointer"
-  >
-    <Languages size={14} />
-    {lang === "en" ? "বাংলা" : "English"}
-  </button>
-</div>
-      )}
+      <div
+        className={`hidden lg:flex justify-end transition-all duration-300 ease-in-out overflow-hidden ${
+          showTopToggle ? "max-h-12 opacity-100 mb-1" : "max-h-0 opacity-0 mb-0 pointer-events-none"
+        }`}
+      >
+        <button
+          onClick={toggleLanguage}
+          className="bg-brand-primary px-2 py-2 flex gap-2 rounded-lg text-white text-sm cursor-pointer"
+        >
+          <Languages size={14} />
+          {lang === "en" ? "বাংলা" : "English"}
+        </button>
+      </div>
 
       {/* Main Navbar */}
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
