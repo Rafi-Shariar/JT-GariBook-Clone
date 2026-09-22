@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import StepSection from './components/StepsSection'
 import TripsContainer from './components/Trips/TripsContainer'
 import GalleryContainer from './components/gallery/GalleryContainer'
+import AppDisplaySection from './components/AppDisplaySection'
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
       <StepSection/>
       <TripsContainer/>
       <GalleryContainer/>
+      <AppDisplaySection/>
      </div>
     </LanguageProvider>
    
