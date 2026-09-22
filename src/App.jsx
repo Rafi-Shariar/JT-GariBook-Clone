@@ -12,6 +12,7 @@ import StepSection from './components/StepsSection'
 import TripsContainer from './components/Trips/TripsContainer'
 import GalleryContainer from './components/gallery/GalleryContainer'
 import AppDisplaySection from './components/AppDisplaySection'
+import NewsContainer from './components/news/NewsContainer'
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
       <TripsContainer/>
       <GalleryContainer/>
       <AppDisplaySection/>
+      <NewsContainer/>
      </div>
     </LanguageProvider>
    

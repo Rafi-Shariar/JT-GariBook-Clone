@@ -3,7 +3,7 @@ import AVA from "../assets/gallery/appIMG.png";
 
 const AppDisplaySection = () => {
   return (
-   <section className="max-w-7xl mx-auto">
+   <section className="max-w-7xl mx-auto px-2">
     <div>
         <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">Be a Smart Driver</h1>
     </div>
