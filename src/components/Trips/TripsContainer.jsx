@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useLanguage } from "../../hook/useLanguage";
 import IMG1 from "../../assets/group/IMG1.png";
 import IMG2 from "../../assets/group/IMG2.png";
