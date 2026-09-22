@@ -9,6 +9,7 @@ import './index.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import StepSection from './components/StepsSection'
+import TripsContainer from './components/Trips/TripsContainer'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <StatsSection/>
       <ServiceContainer/>
       <StepSection/>
+      <TripsContainer/>
      </div>
     </LanguageProvider>
    
