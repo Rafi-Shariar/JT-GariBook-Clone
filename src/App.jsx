@@ -8,12 +8,13 @@ import { LanguageProvider } from './context/LanguageContext'
 import './index.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import StepSection from './components/StepsSection'
 
 function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 400,
       once: true,
       easing: "ease-in-out",
     });
@@ -27,6 +28,7 @@ function App() {
       <BannerContainer/>
       <StatsSection/>
       <ServiceContainer/>
+      <StepSection/>
      </div>
     </LanguageProvider>
    

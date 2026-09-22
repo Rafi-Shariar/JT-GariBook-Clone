@@ -60,6 +60,14 @@ export const translations = {
         title : "Vehicle Management System - VMS",
         des : "Just like Garibook Business makes traveling easy for your team, our Vehicle Management System (VMS) helps you take care of your own cars. VMS is a great tool that works with Garibook Business to make sure your vehicles are used the best way possible."
       }
+    },
+     step :{
+      title : "Freedom in Every Journey",
+      step : [
+      {title : "Choose the Car", des : "Pick what suits your comfort.", icon : "https://garibook.com/assets/icon/car.svg"},
+      {title : "Choose the Driver", des : "Based on ratings and reviews.", icon : "https://garibook.com/assets/icon/drive.svg"},
+      {title : "Choose the Fare", des : "Select the bid that fits your budget.", icon : "https://garibook.com/assets/icon/price.svg"},
+    ]
     }
   },
 
@@ -124,6 +132,14 @@ export const translations = {
         title : "Vehicle Management System - VMS",
         des : "Just like Garibook Business makes traveling easy for your team, our Vehicle Management System (VMS) helps you take care of your own cars. VMS is a great tool that works with Garibook Business to make sure your vehicles are used the best way possible."
       }
+    },
+    step :{
+      title : "প্রতি রাইডেই নিশ্চিত হোক চলার স্বাধীনতা",
+      step : [
+      {title : "গাড়ি নির্বাচন করুন", des : "আপনার পছন্দ অনুযায়ী নির্বাচন করুন.", icon : "https://garibook.com/assets/icon/car.svg"},
+      {title : "স্মার্ট ড্রাইভার নির্বাচন করুন", des : "রেটিং এবং রিভিউ অনুসারে", icon : "https://garibook.com/assets/icon/drive.svg"},
+      {title : "ভাড়া নির্বাচন করুন", des : "আপনার পছন্দের ভাড়ায় ট্রিপ কনফার্ম করুন।", icon : "https://garibook.com/assets/icon/price.svg"},
+    ]
     }
   },
 };
