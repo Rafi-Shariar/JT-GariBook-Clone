@@ -17,12 +17,12 @@ export default function ServiceContainer() {
   return (
     <div className="mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {/* Title */}
-      <h1 className="font-extrabold text-3xl sm:text-4xl text-gray-900 mb-6">
+      <h1 className="font-extrabold text-3xl sm:text-4xl text-gray-900 mb-6" data-aos="fade-up" data-aos-duration="500">
         {services.title}
       </h1>
 
       {/* Tabs */}
-      <div className="flex flex-wrap gap-4 mb-10">
+      <div className="flex flex-wrap gap-4 mb-10" data-aos="fade-up" data-aos-duration="500">
         {services.options?.map((label, index) => (
           <button
             key={index}
