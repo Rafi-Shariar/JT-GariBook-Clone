@@ -26,6 +26,41 @@ export const translations = {
       districtCovered: "District Covered",
       districtCoveredCount: 64,
     },
+    services : {
+      title : "Our Services",
+      options :["Rides", "Garibook Bussiness", "Garibook Club", "VMS"],
+      rides : [
+        {
+          title : "Intercity Car Rental",
+          des : "Travel between cities with comfort and confidence."
+        },
+        {
+          title : "Ride share",
+          des : "Go anywhere in the city, quickly and easily."
+        },
+        {
+          title : "Airport Rental",
+          des : "Whether you’re flying abroad or returning home, enjoy a comfortable and worry-free airport journey."
+        },
+        {
+          title : "Hourly Rental",
+          des : "Rent a car by the hour, tailored to your needs."
+        },
+
+      ],
+      garibookBussiness : {
+        title : "Modern Car Rentals for Business",
+        des : "Simplify your corporate transportation, ensure on-time team mobility, and gain control with our VMS"
+      },
+       garibookClub : {
+        title : "Turn Your Car into Earnings with Garibook Club",
+        des : "Garibook Club is more than just a community. Join a vibrant network of car enthusiasts, all fueled by the same passion: the open road and the thrill of making money doing what they love."
+      },
+       vms : {
+        title : "Vehicle Management System - VMS",
+        des : "Just like Garibook Business makes traveling easy for your team, our Vehicle Management System (VMS) helps you take care of your own cars. VMS is a great tool that works with Garibook Business to make sure your vehicles are used the best way possible."
+      }
+    }
   },
 
   bn: {
@@ -55,5 +90,40 @@ export const translations = {
       districtCovered: "যে সকল জেলায় আমাদের সার্ভিস রয়েছে",
       districtCoveredCount: 64,
     },
+    services : {
+      title : "Our Services",
+      options :["রাইড", "গাড়িবুক বিজনেস", "গাড়িবুক ক্লাব", "VMS"],
+      rides : [
+        {
+          title : "ইন্টারসিটি কার রেন্টাল",
+          des : "বাংলাদেশের যেকোনো প্রান্তে, শহর থেকে শহরে স্বাচ্ছন্দ্যে ও ঝামেলাহীন ভ্রমণ করুন বেস্ট কোয়ালিটির গাড়িতে।"
+        },
+        {
+          title : "রাইডশেয়ার",
+          des : "শহরের ভেতরে যেকোনো প্রয়োজনে ভ্রমণ হবে সহজ ও বাধাহীন।."
+        },
+        {
+          title : "এয়ারপোর্ট রেন্টাল",
+          des : "দেশ থেকে বিদেশে কিংবা বিদেশ থেকে দেশে ফেরার জার্নি হবে আরামের ও নিশ্চিন্ত।"
+        },
+        {
+          title : "ঘণ্টায়",
+          des : "প্রয়োজন অনুযায়ী গাড়ি ভাড়া করুন ঘণ্টা ভিত্তিতে।"
+        },
+
+      ],
+      garibookBussiness : {
+        title : "Modern Car Rentals for Business",
+        des : "Simplify your corporate transportation, ensure on-time team mobility, and gain control with our VMS"
+      },
+       garibookClub : {
+        title : "Turn Your Car into Earnings with Garibook Club",
+        des : "Garibook Club is more than just a community. Join a vibrant network of car enthusiasts, all fueled by the same passion: the open road and the thrill of making money doing what they love."
+      },
+       vms : {
+        title : "Vehicle Management System - VMS",
+        des : "Just like Garibook Business makes traveling easy for your team, our Vehicle Management System (VMS) helps you take care of your own cars. VMS is a great tool that works with Garibook Business to make sure your vehicles are used the best way possible."
+      }
+    }
   },
 };
