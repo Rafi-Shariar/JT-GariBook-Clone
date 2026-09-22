@@ -13,6 +13,8 @@ import TripsContainer from './components/Trips/TripsContainer'
 import GalleryContainer from './components/gallery/GalleryContainer'
 import AppDisplaySection from './components/AppDisplaySection'
 import NewsContainer from './components/news/NewsContainer'
+import ReviewContainer from './components/vedio-review/ReviewContainer'
+import Footer from './components/shared/Footer'
 
 function App() {
 
@@ -37,6 +39,8 @@ function App() {
       <GalleryContainer/>
       <AppDisplaySection/>
       <NewsContainer/>
+      <ReviewContainer/>
+      <Footer/>
      </div>
     </LanguageProvider>
    
