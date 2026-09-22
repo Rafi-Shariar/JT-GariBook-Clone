@@ -11,9 +11,9 @@ export const translations = {
       login: "Login",
     },
     hero: {
-      title: "Rent a car easily anywhere in Bangladesh",
-      subtitle: "Choose from verified drivers and wide range of cars",
-      searchBtn: "Search Ride",
+      title: ["Your Journey Starts Here..." , "Assurance of Effortless Travel", "Luxury Trips With Comfort"],
+      subtitle: "Choose your city, pick your car and enjoy the journey with Garibook’s best drivers.",
+      downloadBtn: "Download App",
     },
     booking: {
       oneWay: "One Way",
@@ -36,9 +36,9 @@ export const translations = {
       login: "লগইন",
     },
     hero: {
-      title: "সহজেই গাড়ি ভাড়া করুন বাংলাদেশ জুড়ে",
-      subtitle: "ভেরিফায়েড চালক ও গাড়ির বিশাল কালেকশন থেকে বেছে নিন",
-      searchBtn: "রাইড খুঁজুন",
+      title: ["আপনার যাত্রা শুরু এখানেই ...", "বাধাহীন ভ্রমণের নিশ্চয়তা" ,"আরামের সাথে লাক্সারি ভ্রমণ"],
+      subtitle: "বেস্ট কোয়ালিটির গাড়িতে, ভেরিফাইড ড্রাইভার সাথে গন্তব্যে পৌঁছে যান নিরাপদে",
+      downloadBtn: "অ্যাপ ডাউনলোড করুন",
     },
     booking: {
       oneWay: "একমুখী",

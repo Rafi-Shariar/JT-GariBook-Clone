@@ -35,15 +35,15 @@ export default function Navbar() {
     <div className="bg-white p-2 sticky top-0 z-50">
       {/* Top language toggle - hides on scroll */}
       {showTopToggle && (
-        <div className="flex justify-end">
-          <button
-            onClick={toggleLanguage}
-            className="bg-brand-primary px-2 py-2 flex gap-2 rounded-lg text-white text-sm cursor-pointer"
-          >
-            <Languages size={14} />
-            {lang === "en" ? "বাংলা" : "English"}
-          </button>
-        </div>
+      <div className="hidden lg:flex justify-end">
+  <button
+    onClick={toggleLanguage}
+    className="bg-brand-primary px-2 py-2 flex gap-2 rounded-lg text-white text-sm cursor-pointer"
+  >
+    <Languages size={14} />
+    {lang === "en" ? "বাংলা" : "English"}
+  </button>
+</div>
       )}
 
       {/* Main Navbar */}
