@@ -6,7 +6,7 @@ const BookingContainer = () => {
   const [id, setId] = useState(1);
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto px-2">
       <div className="bg-white shadow-[0_-8px_20px_rgba(0,0,0,0.06)] flex gap-4 p-6 rounded-t-xl w-fit">
         <button
           onClick={() => setId(1)}
@@ -34,7 +34,7 @@ const BookingContainer = () => {
       </div>
 
       {/* Card er content */}
-      <div className="bg-white shadow-[0_25px_11px_rgba(0,0,0,0.05)]">
+      <div className="bg-white shadow-[0_25px_11px_rgba(0,0,0,0.05)] rounded-xl">
         {id === 1 && <CarRentalForm />}
         {id === 2 && <AirportRentalForm />}
       </div>

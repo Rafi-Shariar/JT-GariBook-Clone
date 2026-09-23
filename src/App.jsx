@@ -1,6 +1,6 @@
 
 import { useEffect } from 'react'
-import BannerContainer from './components/Hero-Banner/BannerContainer'
+import BannerContainer from './components/heroBanner/BannerContainer'
 import ServiceContainer from './components/service/ServiceContainer'
 import Navbar from './components/shared/Navbar'
 import StatsSection from './components/StatsSection'

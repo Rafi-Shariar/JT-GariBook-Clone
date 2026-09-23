@@ -77,7 +77,7 @@ export default function StatsSection() {
   }, [lang, t]);
 
   return (
-    <section className="relative w-full bg-linear-to-r from-blue-900 via-blue-800 to-blue-600 text-white pt-52 md:pt-64 lg:pt-72 pb-16 overflow-hidden">
+    <section className="relative w-full bg-linear-to-r from-blue-900 via-blue-800 to-blue-600 text-white pt-52 md:pt-64 lg:pt-72 pb-16 overflow-hidden -z-20 -mt-24 md:-mt-38">
       {/* Content wrapper */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
         <div className="flex flex-col gap-16 md:gap-24">

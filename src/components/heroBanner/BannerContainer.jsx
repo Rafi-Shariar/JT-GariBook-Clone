@@ -3,7 +3,7 @@ import HeroTitle from './HeroTitle';
 
 const BannerContainer = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+    <div className="max-w-7xl mx-auto px-4 pt-16 pb-28">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-16">
         <div className="flex items-center">
           <HeroTitle />
