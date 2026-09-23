@@ -5,8 +5,10 @@ import { FaMapMarkerAlt, FaCalendarAlt, FaClock, FaArrowRight } from "react-icon
 
 import CarSelectDropdown from "../booking/CarSelectionDropdown";
 import { carsData } from "../../data/carData";
+import { useLanguage } from "../../hook/useLanguage";
 
 const CarRentalForm = () => {
+  const { t } = useLanguage();
   const {
     register,
     handleSubmit,
@@ -69,7 +71,7 @@ const CarRentalForm = () => {
         <div className="flex flex-col gap-1 md:border-l md:pl-6 border-gray-200">
           <label className="text-xs md:text-lg font-semibold text-gray-800 flex items-center gap-1.5">
             <span className="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span> 
-            Pickup Location <span className="text-red-500">*</span>
+            {t.bookings.form.pickupLocation}<span className="text-red-500">*</span>
           </label>
           <input
             type="text"
@@ -87,7 +89,7 @@ const CarRentalForm = () => {
           <div className="flex flex-col gap-1 md:border-l md:pl-6 border-gray-200">
             <label className="text-xs md:text-lg font-semibold text-gray-800 flex items-center gap-1.5">
               <FaMapMarkerAlt className="text-blue-600 text-xs" /> 
-              Drop-off Location <span className="text-red-500">*</span>
+              {t.bookings.form.dropofLocation} <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -124,7 +126,7 @@ const CarRentalForm = () => {
           <div className="flex flex-col gap-1">
             <label className="text-xs md:text-lg font-semibold text-gray-800 flex items-center gap-1.5">
               <FaCalendarAlt className="text-gray-700 text-xs" /> 
-              Return Date & Time <span className="text-red-500">*</span>
+              {t.bookings.form.returnData} <span className="text-red-500">*</span>
             </label>
             <input
               type="datetime-local"
@@ -144,7 +146,7 @@ const CarRentalForm = () => {
           <div className="flex flex-col gap-1 md:border-l md:pl-6 border-gray-200">
             <label className="text-xs md:text-lg font-semibold text-gray-800 flex items-center gap-1.5">
               <FaClock className="text-gray-700 text-xs" /> 
-              Select Hours <span className="text-red-500">*</span>
+              {t.bookings.form.selectHours} <span className="text-red-500">*</span>
             </label>
             <div className="flex items-center gap-3 mt-2 border border-slate-100 p-2 rounded-lg justify-between">
               <button
@@ -174,9 +176,9 @@ const CarRentalForm = () => {
       <div className="flex flex-wrap items-center justify-between pt-6 gap-4">
         <div className="flex items-center gap-4">
           {[
-            { label: "One Way", value: "one_way" },
-            { label: "Round Way", value: "round_way" },
-            { label: "Hourly", value: "hourly" },
+            { label: `${t.bookings.nav.oneway}`, value: "one_way" },
+            { label: `${t.bookings.nav.roundWay}`, value: "round_way" },
+            { label: `${t.bookings.nav.hourly}`, value: "hourly" },
           ].map((type) => {
             const isChecked = tripType === type.value;
             return (

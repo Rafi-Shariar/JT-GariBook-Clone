@@ -6,8 +6,10 @@ import CarSelectDropdown from "../booking/CarSelectionDropdown";
 
 import { carsData } from "../../data/carData";
 import AirportSelectDropdown from "../booking/AirportSelectionDropdown";
+import { useLanguage } from "../../hook/useLanguage";
 
 const AirportRentalForm = () => {
+   const { t } = useLanguage();
   const {
     register,
     handleSubmit,
@@ -79,7 +81,7 @@ const AirportRentalForm = () => {
         <div className="md:border-l md:pl-6 border-gray-200">
           {tripType === "from_airport" ? (
             <AirportSelectDropdown
-              label="Pickup Airport"
+              label={`${t.bookings.form.pickupAirport}`}
               selectedAirport={selectedPickupAirport}
               onSelectAirport={(airport) =>
                 setValue("pickupAirport", airport, { shouldValidate: true })
@@ -89,7 +91,7 @@ const AirportRentalForm = () => {
             <div className="flex flex-col gap-1">
               <label className="text-xs md:text-lg font-semibold text-gray-800 flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
-                Pickup Location <span className="text-red-500">*</span>
+                {t.bookings.form.pickupLocation} <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
@@ -114,7 +116,7 @@ const AirportRentalForm = () => {
             <div className="flex flex-col gap-1">
               <label className="text-xs md:text-lg font-semibold text-gray-800 flex items-center gap-1.5">
                 <FaMapMarkerAlt className="text-blue-600 text-xs" />
-                Drop-off Location <span className="text-red-500">*</span>
+                {t.bookings.form.dropofLocation} <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
@@ -132,7 +134,7 @@ const AirportRentalForm = () => {
             </div>
           ) : (
             <AirportSelectDropdown
-              label="Drop-off Airport"
+               label={`${t.bookings.form.dropofAirport}`}
               selectedAirport={selectedDropoffAirport}
               onSelectAirport={(airport) =>
                 setValue("dropoffAirport", airport, { shouldValidate: true })
@@ -166,8 +168,8 @@ const AirportRentalForm = () => {
       <div className="flex flex-wrap items-center justify-between pt-6 border-t border-gray-100 gap-4">
         <div className="flex items-center gap-4">
           {[
-            { label: "From Airport", value: "from_airport" },
-            { label: "From Home", value: "from_home" },
+            { label: `${t.bookings.nav.fromAirport}`, value: "from_airport" },
+            { label: `${t.bookings.nav.fromHome}`, value: "from_home" },
           ].map((type) => {
             const isChecked = tripType === type.value;
             return (

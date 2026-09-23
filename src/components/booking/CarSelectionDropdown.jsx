@@ -1,11 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { FaCar, FaChevronDown } from "react-icons/fa";
 import { carsData } from "../../data/carData";
+import { useLanguage } from "../../hook/useLanguage";
 
 
 const CarSelectDropdown = ({ selectedCar, onSelectCar }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const { t } = useLanguage();
 
   // বাইরে ক্লিক করলে যাতে মেনু বন্ধ হয়ে যায়
   useEffect(() => {
@@ -27,7 +29,7 @@ const CarSelectDropdown = ({ selectedCar, onSelectCar }) => {
     <div ref={dropdownRef} className="relative flex flex-col gap-1 w-full">
       {/* Label */}
       <label className="text-xs md:text-lg font-semibold text-gray-800 flex items-center gap-1.5">
-        <FaCar className="text-gray-700 text-sm" /> Choose a Car <span className="text-red-500">*</span>
+        <FaCar className="text-gray-700 text-sm" /> {t.bookings.form.chooseCar} <span className="text-red-500">*</span>
       </label>
 
       {/* Selector Trigger */}

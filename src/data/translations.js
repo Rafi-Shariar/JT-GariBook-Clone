@@ -93,6 +93,26 @@ export const translations = {
         { title: "Long Trip" },
       ],
     },
+    bookings : {
+      nav : {
+        carRental : "Car Rental",
+        airportRental : "Airport Rental",
+        oneway : "One Way",
+        roundWay : "Round Way",
+        hourly : "Hourly",
+        fromAirport : "From Airport",
+        fromHome : "From Home",
+      },
+      form : {
+        chooseCar : "Choose a Car",
+        pickupLocation : "Pickup Location",
+        dropofLocation : "Drop-off Location",
+        returnData : "Return Date & Time",
+        selectHours : "Select Hours",
+        pickupAirport : "Pickup Airport",
+        dropofAirport : "Drop-off Airport"
+      }
+    }
   },
 
   bn: {
@@ -189,5 +209,25 @@ export const translations = {
         { title: "লং ট্যুর" },
       ],
     },
+      bookings : {
+      nav : {
+        carRental : "কার রেন্টাল",
+        airportRental : "এয়ারপোর্ট রেন্টাল",
+         oneway : "ওয়ানওয়ে",
+        roundWay : "যাওয়া-আসা",
+        hourly : "ঘণ্টায়",
+        fromAirport : "এয়ারপোর্ট থেকে",
+        fromHome : "বাসা থেকে",
+      },
+      form : {
+        chooseCar : "একটি গাড়ি নির্বাচন করুন",
+        pickupLocation : "পিকআপ লোকেশন",
+        dropofLocation : "ড্রপ-অফ লোকেশন",
+        returnData : "ফিরে আসার তারিখ ও সময় ",
+        selectHours : "ঘণ্টা সিলেক্ট করুন",
+        pickupAirport : "এয়ারপোর্ট থেকে পিকআপ",
+        dropofAirport : "এয়ারপোর্টে ড্রপ-অফ"
+      }
+    }
   },
 };

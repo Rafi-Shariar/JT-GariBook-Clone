@@ -1,9 +1,11 @@
 import { useState } from "react";
 import CarRentalForm from "../forms/CarRentalForm";
 import AirportRentalForm from "../forms/AirportRentalForm";
+import { useLanguage } from "../../hook/useLanguage";
 
 const BookingContainer = () => {
   const [id, setId] = useState(1);
+  const { t } = useLanguage();
 
   return (
     <div className="max-w-7xl mx-auto px-2">
@@ -17,7 +19,7 @@ const BookingContainer = () => {
                             : "bg-white text-gray-800"
                         }`}
         >
-          Car Rental
+          {t.bookings.nav.carRental}
         </button>
 
         <button
@@ -29,7 +31,7 @@ const BookingContainer = () => {
                             : "bg-white text-gray-800"
                         }`}
         >
-          Airport Rental
+         {t.bookings.nav.airportRental}
         </button>
       </div>
 
