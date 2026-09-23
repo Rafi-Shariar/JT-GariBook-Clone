@@ -8,11 +8,13 @@ const BookingContainer = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="max-w-7xl mx-auto px-2">
-      <div className="bg-white shadow-[0_-8px_20px_rgba(0,0,0,0.06)] flex gap-4 p-6 rounded-t-xl w-fit">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      {/* Mobile-e overflow handle korar jonno w-full sm:w-fit ebong horizontal scroll */}
+      <div className="bg-white shadow-[0_-8px_20px_rgba(0,0,0,0.06)] flex gap-4 p-6 rounded-t-xl w-full sm:w-fit overflow-x-auto">
         <button
+          type="button"
           onClick={() => setId(1)}
-          className={`border border-transparent hover:border-slate-300 py-3 px-8 text-xl font-semibold rounded-lg cursor-pointer  whitespace-nowrap 
+          className={`border border-transparent hover:border-slate-300 py-3 px-8 text-base md:text-xl font-semibold rounded-lg cursor-pointer whitespace-nowrap flex-1 sm:flex-initial text-center
                         ${
                           id === 1
                             ? "bg-black text-white"
@@ -23,20 +25,21 @@ const BookingContainer = () => {
         </button>
 
         <button
+          type="button"
           onClick={() => setId(2)}
-          className={`border border-transparent hover:border-slate-300 py-3 px-8 text-xl font-semibold rounded-lg cursor-pointer  whitespace-nowrap 
+          className={`border border-transparent hover:border-slate-300 py-3 px-8 text-base md:text-xl font-semibold rounded-lg cursor-pointer whitespace-nowrap flex-1 sm:flex-initial text-center
                         ${
                           id === 2
                             ? "bg-black text-white"
                             : "bg-white text-gray-800"
                         }`}
         >
-         {t.bookings.nav.airportRental}
+          {t.bookings.nav.airportRental}
         </button>
       </div>
 
-      {/* Card er content */}
-      <div className="bg-white shadow-[0_25px_11px_rgba(0,0,0,0.05)] rounded-xl">
+      {/* Card er content: overflow-hidden screen theke ber hoye jaowa atkabe */}
+      <div className="bg-white shadow-[0_25px_11px_rgba(0,0,0,0.05)] rounded-xl overflow-hidden">
         {id === 1 && <CarRentalForm />}
         {id === 2 && <AirportRentalForm />}
       </div>

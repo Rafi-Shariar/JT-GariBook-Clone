@@ -184,7 +184,7 @@ const CarRentalForm = () => {
             return (
               <label
                 key={type.value}
-                className={`flex items-center gap-2 text-lg font-semibold cursor-pointer px-4 py-2 rounded-xl transition-all ${
+                className={`flex items-center gap-2 text-sm md:text-lg font-semibold cursor-pointer px-4 py-2 rounded-xl transition-all ${
                   isChecked ? "bg-blue-50/80 text-blue-600" : "text-gray-600 hover:bg-gray-50"
                 }`}
               >
@@ -202,7 +202,7 @@ const CarRentalForm = () => {
 
         <button
           type="submit"
-          className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-xl flex items-center gap-2 transition-all shadow-md cursor-pointer"
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-12 py-5 rounded-xl flex items-center gap-12 transition-all shadow-md cursor-pointer"
         >
           Continue <FaArrowRight />
         </button>

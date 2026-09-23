@@ -165,7 +165,7 @@ const AirportRentalForm = () => {
       </div>
 
       {/* Bottom Area: Trip Type Radios & Submit */}
-      <div className="flex flex-wrap items-center justify-between pt-6 border-t border-gray-100 gap-4">
+      <div className="flex flex-wrap items-center justify-between pt-4 gap-4">
         <div className="flex items-center gap-4">
           {[
             { label: `${t.bookings.nav.fromAirport}`, value: "from_airport" },
