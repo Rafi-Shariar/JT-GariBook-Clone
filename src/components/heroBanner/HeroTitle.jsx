@@ -61,16 +61,17 @@ useEffect(() => {
 }, [lang, t]);
 
   return (
-    <div className="min-h-[72px] sm:min-h-[96px] flex items-center ">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight max-w-[500px]">
-        <span ref={textRef}></span>
-        <span
-          ref={cursorRef}
-          className="inline-block ml-1 text-brand-primary font-light"
-        >
-          |
-        </span>
-      </h1>
-    </div>
-  );
+  /* ২ লাইনের জন্য ফিক্সড/পর্যাপ্ত মিনিমাম হাইট এবং items-start */
+  <div className="min-h-[90px] sm:min-h-[115px] md:min-h-[135px] lg:min-h-[155px] flex items-start">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight max-w-[500px]">
+      <span ref={textRef}></span>
+      <span
+        ref={cursorRef}
+        className="inline-block ml-1 text-brand-primary font-light"
+      >
+        |
+      </span>
+    </h1>
+  </div>
+);
 }
