@@ -7,7 +7,7 @@ const BookingContainer = () => {
 
   return (
     <div className="max-w-7xl mx-auto">
-      <div className=" shadow-lg flex gap-4 p-6 rounded-t-xl w-fit">
+      <div className="bg-white shadow-[0_-8px_20px_rgba(0,0,0,0.06)] flex gap-4 p-6 rounded-t-xl w-fit">
         <button
           onClick={() => setId(1)}
           className={`border border-transparent hover:border-slate-300 py-3 px-8 text-xl font-semibold rounded-lg cursor-pointer  whitespace-nowrap 
@@ -34,7 +34,7 @@ const BookingContainer = () => {
       </div>
 
       {/* Card er content */}
-      <div className="">
+      <div className="bg-white shadow-[0_25px_11px_rgba(0,0,0,0.05)]">
         {id === 1 && <CarRentalForm />}
         {id === 2 && <AirportRentalForm />}
       </div>

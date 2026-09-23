@@ -55,7 +55,7 @@ const AirportRentalForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="bg-white rounded-b-2xl rounded-tr-2xl p-6 shadow-lg"
+      className="bg-white rounded-b-2xl rounded-tr-2xl p-6 shadow-xl "
     >
       {/* Top Input Grid */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pb-6 items-start">
