@@ -84,7 +84,7 @@ export default function Navbar() {
           </ul>
 
           <div>
-            <button className="bg-brand-primary py-2 px-4 text-sm text-white rounded-lg">
+            <button className="bg-brand-primary py-2 px-4 text-sm text-white rounded-lg cursor-pointer">
               {t.nav.login}
             </button>
           </div>

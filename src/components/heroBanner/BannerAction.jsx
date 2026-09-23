@@ -13,7 +13,7 @@ const BannerAction = () => {
             </div>
 
             <div className='mt-4'>
-                <button className='bg-yellow-400 flex items-center justify-between p-6 gap-12 rounded-2xl text-lg font-medium'>{t.hero.downloadBtn} <ArrowRight/></button>
+                <button className='bg-yellow-400 flex items-center justify-between p-6 gap-12 rounded-2xl text-lg font-medium cursor-pointer'>{t.hero.downloadBtn} <ArrowRight/></button>
             </div>
             
         </div>
